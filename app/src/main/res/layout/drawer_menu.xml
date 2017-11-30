@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e0e5ee"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/ic_launcher_background">
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="10dp"
+                app:srcCompat="@mipmap/ca_agriculture" />
+
+            <TextView
+                android:id="@+id/side_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imageView"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="22dp"
+                android:layout_toEndOf="@+id/imageView"
+                android:text="@string/side_user_name" />
+
+            <TextView
+                android:id="@+id/side_mail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/side_name"
+                android:layout_below="@+id/side_name"
+                android:layout_marginTop="5dp"
+                android:text="@string/side_user_mail" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f4f6f9"
+            android:orientation="vertical">
+            <!--ユーザプロファイル-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="18dp"
+                    app:srcCompat="@mipmap/icon_userprofile" />
+
+                <TextView
+                    android:id="@+id/profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imageView2"
+                    android:layout_marginBottom="9dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_toEndOf="@+id/imageView2"
+                    android:text="@string/side_user_profile" />
+
+            </RelativeLayout>
+
+            <!--ボランティア募集概要-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="18dp"
+                    app:srcCompat="@mipmap/icon_campaign" />
+
+                <TextView
+                    android:id="@+id/campaign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imageView3"
+                    android:layout_marginBottom="9dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_toEndOf="@+id/imageView3"
+                    android:text="@string/side_user_campaign" />
+
+            </RelativeLayout>
+
+            <!--活動参加実績-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="18dp"
+                    app:srcCompat="@mipmap/icon_activity" />
+
+                <TextView
+                    android:id="@+id/user_activity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imageView4"
+                    android:layout_marginBottom="9dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_toEndOf="@+id/imageView4"
+                    android:text="@string/side_user_activity" />
+
+
+            </RelativeLayout>
+
+            <!--講習会情報-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="18dp"
+                    app:srcCompat="@mipmap/icon_training_session" />
+
+                <TextView
+                    android:id="@+id/class_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imageView5"
+                    android:layout_marginBottom="9dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_toEndOf="@+id/imageView5"
+                    android:text="@string/side_user_class_info" />
+
+
+            </RelativeLayout>
+
+            <!--講習会参加実績-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="18dp"
+                    app:srcCompat="@mipmap/icon_kosyukai" />
+
+                <TextView
+                    android:id="@+id/user_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imageView6"
+                    android:layout_marginBottom="9dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_toEndOf="@+id/imageView6"
+                    android:text="@string/side_user_info" />
+
+            </RelativeLayout>
+
+            <!--ボランティア募集団体-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="18dp"
+                    app:srcCompat="@mipmap/icon_dantai" />
+
+                <TextView
+                    android:id="@+id/user_dantai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imageView7"
+                    android:layout_marginBottom="9dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_toEndOf="@+id/imageView7"
+                    android:text="@string/side_user_dantai" />
+
+
+            </RelativeLayout>
+
+            <!--カレンダー-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="18dp"
+                    app:srcCompat="@mipmap/icon_calendar" />
+
+                <TextView
+                    android:id="@+id/calendar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imageView8"
+                    android:layout_marginBottom="9dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_toEndOf="@+id/imageView8"
+                    android:text="@string/side_user_calendar" />
+
+            </RelativeLayout>
+
+            <!--レコメンド-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/imageView13"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="18dp"
+                    app:srcCompat="@mipmap/icon_recommend" />
+
+                <TextView
+                    android:id="@+id/recommend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imageView13"
+                    android:layout_marginBottom="9dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_toEndOf="@+id/imageView13"
+                    android:text="@string/side_user_recommend" />
+
+            </RelativeLayout>
+
+            <!--申込みキャンセル-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="18dp"
+                    app:srcCompat="@mipmap/icon_delect" />
+
+                <TextView
+                    android:id="@+id/user_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imageView9"
+                    android:layout_marginBottom="9dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_toEndOf="@+id/imageView9"
+                    android:text="@string/side_user_cancel" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:background="#f4f6f9"
+            android:orientation="vertical">
+            <!--言語設定-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="18dp"
+                    app:srcCompat="@mipmap/icon_language" />
+
+                <TextView
+                    android:id="@+id/language"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imageView10"
+                    android:layout_marginBottom="9dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_toEndOf="@+id/imageView10"
+                    android:text="@string/side_user_cancel" />
+
+            </RelativeLayout>
+
+            <!--本アプリについて-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/imageView11"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="18dp"
+                    app:srcCompat="@mipmap/icon_legal_statement" />
+
+                <TextView
+                    android:id="@+id/about_the_app"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imageView11"
+                    android:layout_marginBottom="9dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_toEndOf="@+id/imageView11"
+                    android:text="@string/side_user_about_the_app" />
+
+
+            </RelativeLayout>
+
+            <!--ログアウト-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/imageView12"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="18dp"
+                    app:srcCompat="@mipmap/icon_log_out" />
+
+                <TextView
+                    android:id="@+id/logout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imageView12"
+                    android:layout_marginBottom="9dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_toEndOf="@+id/imageView12"
+                    android:text="@string/side_user_logout" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:layout_alignStart="@+id/profile"-->
+    <!--android:layout_below="@+id/profile"-->
+    <!--android:background="#000000" />-->
+</ScrollView>

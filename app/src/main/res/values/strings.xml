@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">volunteer</string>
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
+    <!--メニュー-->
+    <string name="sideImageName">背景图</string>
+    <string name="side_user_name">天公太郎</string>
+    <string name="side_user_mail">66666666@gmail.com</string>
+    <string name="side_user_profile">ユーザプロファイル</string>
+    <string name="side_user_campaign">ボランティア募集概要</string>
+    <string name="side_user_activity">活動参加実績</string>
+    <string name="side_user_class_info">講習会情報</string>
+    <string name="side_user_info">講習会参加実績</string>
+    <string name="side_user_dantai">ボランティア募集団体</string>
+    <string name="side_user_calendar">カレンダー</string>
+    <string name="side_user_recommend">レコメンド</string>
+    <string name="side_user_cancel">申込みキャンセル</string>
+    <string name="side_user_language">言語設定</string>
+    <string name="side_user_about_the_app">本アプリについて</string>
+    <string name="side_user_logout">ログアウト</string>
+
+    <!--top-->
+    <string name="top_notice">お知らせ:</string>
+    <string name="top_more">もっと見る</string>
+    <string name="top_campaign_all">ボランティア募集概要一覧</string>
+    <string name="top_list_item_time">2017/11/10~2018/03/08</string>
+</resources>
