@@ -1,4 +1,3 @@
 # volunteer_mobile
-a demo for kotlin
+android for volunteer
 
-给客户展示的原型
